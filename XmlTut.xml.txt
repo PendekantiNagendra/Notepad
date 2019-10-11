@@ -1,0 +1,142 @@
+<? xml version="1.0" ?>
+<!DOCTYPE employee SYSTEM "employee.dtd" >
+<employees>
+      <employee>
+         <empNo>1</empNo>
+         <empName>Nag</empName>
+         <band>E</band>
+        <dateOfJoin>2019-09-12</dateOfJoin>
+        <salary>9000</salary>
+     </employee>
+
+      <employee>
+         <empNo>1</empNo>
+         <empName>Nag</empName>
+         <band>E</band>
+        <dateOfJoin>2019-09-12</dateOfJoin>
+        <salary>9000</salary>
+      </employee>
+</employees>
+          
+
+ 		** XML documents create a hierarchical structure looks like a tree so it is known as XML Tree that starts at "the root" and branches to "the leaves".
+        			
+<?xml version="1.0" encoding="ISO-8859-1"?>  
+<note>  
+ <to>Tove</to>  
+ <from>Jani</from>  
+  <heading>Reminder</heading>  
+ <body>Don't forget me this weekend!</body>  
+</note>  
+ The first line is the XML declaration. It defines the XML version (1.0) and the encoding used (ISO-8859-1 = Latin-1/West European character set).
+ The next line describes the root element of the document (like saying: "this document is a note"):
+ The next 4 lines describe 4 child elements of the root (to, from, heading, and body).
+ And finally the last line defines the end of the root element.
+
+
+	** Another Example of XML: Books
+File: books.xml
+
+ <?xml version="1.0" encoding="UTF-8"?> 
+<bookstore>  
+  <book category="COOKING">  
+    <title lang="en">Everyday Italian</title>  
+    <author>Giada De Laurentiis</author>  
+    <year>2005</year>  
+    <price>30.00</price>  
+  </book>  
+  <book category="CHILDREN">  
+    <title lang="en">Harry Potter</title>  
+    <author>J K. Rowling</author>  
+    <year>2005</year>  
+    <price>29.99</price>  
+  </book>  
+  <book category="WEB">  
+    <title lang="en">Learning XML</title>  
+    <author>Erik T. Ray</author>  
+    <year>2003</year>  
+    <price>39.95</price>  
+  </book>  
+</bookstore>  
+
+The root element in the example is <bookstore>. All elements in the document are contained within <bookstore>.
+
+The <book> element has 4 children: <title>,< author>, <year> and <price>.
+
+		
+	** XML Attributes
+XML elements can have attributes. By the use of attributes we can add the information about the element.
+
+XML attributes enhance the properties of the elements.
+
+Note: XML attributes must always be quoted. We can use single or double quote.
+Let us take an example of a book publisher. Here, book is the element and publisher is the attribute.
+
+	<book publisher="Tata McGraw Hill"></book>  
+Or
+
+<book publisher='Tata McGraw Hill'></book>  
+Metadata should be stored as attribute and data should be stored as element.
+
+<book>  
+<book category="computer">  
+<author> A & B </author>  
+</book>  
+Data can be stored in attributes or in child elements. But there are some limitations in using attributes, over child elements.
+
+		**Difference between attribute and sub-element
+
+In the context of documents, attributes are part of markup, while sub elements are part of the basic document contents.
+
+In the context of data representation, the difference is unclear and may be confusing.
+
+Same information can be represented in two ways:
+
+1st way:
+
+<book publisher="Tata McGraw Hill"> </book>  
+2nd way:
+
+<book>  
+<publisher> Tata McGraw Hill </publisher>  
+</book>  
+
+In the first example publisher is used as an attribute and in the second example publisher is an element. XML attributes must be Quoted.("" or '').
+
+Both examples provide the same information but it is good practice to avoid attribute in XML and use elements instead of attributes.
+   
+** XML Comments
+<!-- Write your comment-->  
+
+  ** XML Tree Structure
+
+An XML document has a self descriptive structure. It forms a tree structure which is referred as an XML tree. 
+The tree structure makes easy to describe an XML document.
+
+A tree structure contains root element (as parent), child element and so on. 
+It is very easy to traverse all succeeding branches and sub-branches and leaf nodes starting from the root.
+
+Example of an XML document
+<?xml version="1.0"?>  
+<college>  
+  <student>  
+      <firstname>Tamanna</firstname>  
+      <lastname>Bhatia</lastname>  
+      <contact>09990449935</contact>  
+      <email>tammanabhatia@abc.com</email>  
+      <address>  
+           <city>Ghaziabad</city>  
+           <state>Uttar Pradesh</state>  
+           <pin>201007</pin>  
+      </address>  
+  </student>  
+</college>   
+
+  In the above example, first line is the XML declaration. It defines the XML version 1.0. Next line shows the root element (college) of the document.
+ Inside that there is one more element (student). Student element contains five branches named <firstname>, <lastname>, <contact>, <Email> and <address>.
+
+<address> branch contains 3 sub-branches named <city>, <state> and <pin>.
+Let's see the tree-structure representation of the above example.
+
+
+XML Tree

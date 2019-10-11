@@ -1,0 +1,40 @@
+{
+  "employees": [
+    {
+      "employee": {
+        "empno": 1,
+        "empname": "Sai",
+        "salary": 10000,
+        "band": "E",
+        "dateofjoin": "2019-09-23"
+      }
+    },
+    {
+      "employee": {
+        "empno": 2,
+        "empname": "Raj",
+        "salary": 15000,
+        "band": "M",
+        "dateofjoin": "2019-09-24"
+      }
+    },
+    {
+      "employee": {
+        "empno": 3,
+        "empname": "Rajesh",
+        "salary": 13000,
+        "band": "M",
+        "dateofjoin": "2019-09-25"
+      }
+    },
+    {
+      "employee": {
+        "empno": 4,
+        "empname": "Ram",
+        "salary": 20000,
+        "band": "C",
+        "dateofjoin": "2019-09-26"
+      }
+    }
+  ]
+}

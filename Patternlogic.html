@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+#pattern1 {
+width:6%;
+background-color:green;
+}
+#pattern2 {
+width:6%;
+background-color:red;
+}
+#pattern3 {
+width:6%;
+background-color:yellow;
+}
+#pattern4 {
+width:6%;
+background-color:pink;
+}
+</style>
+</head>
+<body>
+<div id="pattern1">
+<script type="text/javascript">
+ var i,j;
+ for(i=1; i <= 5; i++)
+ {
+  for(j=1; j<=i; j++)
+ {
+   
+   document.write(j);
+  }
+   document.write('<br />');
+  }
+    
+</script>
+</div> <br/></br>
+
+<div id="pattern2">
+<script type="text/javascript" >
+ var i,j;
+  for(i=5;i>=1;i--)
+    {
+        for(j=1;j<=i;j++)
+        {
+            document.write(i);
+  }
+   document.write('<br />');
+  }
+</script>
+</div> <br/></br>
+
+<div id="pattern3">
+<script type="text/javascript">
+ var i,j;
+ for(i=1; i <= 5; i++)
+ {
+  for(j=5;j>=i;j--)
+ {
+   
+   document.write(j);
+  }
+   document.write('<br />');
+  }
+    
+</script>
+</div> <br/></br>
+
+<div id="pattern4">
+<script type="text/javascript">
+ var i,num=5;
+  for(i=5;i>=1;i--)
+    {
+        for(j=1;j<=i;j++)
+        {
+            document.write(num);
+  }
+   document.write('<br />');
+  }
+    
+</script>
+</div> 
+</body>
+</html>
